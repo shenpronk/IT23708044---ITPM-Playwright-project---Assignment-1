@@ -1,0 +1,727 @@
+[
+  {
+    "id": "Pos_Fun_0001",
+    "name": "Singlar form Conversion",
+    "length_type": "S",
+    "input": "Lamayaa mal kadanavaa",
+    "expected": "ළමයා මල් කඩනවා",
+    "actual": "ළමයා මල් කඩනවා",
+    "status": "Pass",
+    "justification": [
+      "· The singular subject and verb are correctly converted.",
+      "· Sinhala spelling and word order are accurate.",
+      "· The meaning of the sentence is fully preserved.",
+      "· Single-clause structure is handled properly."
+    ],
+    "coverage": [
+      "· Daily language usage",
+      "· Simple sentence",
+      "· S (≤30 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0002",
+    "name": "Plural Tense Conversion",
+    "length_type": "S",
+    "input": "muvoo kaeLaeevee dhuvathi",
+    "expected": "මුවෝ කැළෑවේ දුවති",
+    "actual": "මුවෝ කැළෑවේ දුවති",
+    "status": "Pass",
+    "justification": [
+      "· The plural subject is correctly converted.",
+      "· Verb form matches the plural tense accurately.",
+      "· Sinhala spelling is correct throughout.",
+      "· The overall meaning is preserved."
+    ],
+    "coverage": [
+      "· Daily language usage",
+      "· Plural form",
+      "· S (≤30 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0003",
+    "name": "Abbreviation preservation",
+    "length_type": "S",
+    "input": "apee TV eka kaduNeya",
+    "expected": "අපේ TV එක කඩුණෙය",
+    "actual": "අපේ TV එක කඩුණෙය",
+    "status": "Pass",
+    "justification": [
+      "· The English abbreviation \"TV\" is preserved without conversion.",
+      "· Singlish portions are correctly converted to Sinhala.",
+      "· No unwanted transliteration of the abbreviation occurs.",
+      "· The sentence meaning remains clear."
+    ],
+    "coverage": [
+      "· Mixed Singlish + English",
+      "· Simple sentence",
+      "· S (≤30 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0004",
+    "name": "Polite request form",
+    "length_type": "M",
+    "input": "karuNaakaralaa mata podi udhavvak karanna puLuvandha",
+    "expected": "කරුණාකරලා මට පොඩි උදව්වක් කරන්න පුළුවන්ද",
+    "actual": "කරුණාකරලා මට පොඩි උදව්වක් කරන්න පුළුවන්ද",
+    "status": "Pass",
+    "justification": [
+      "· The polite request structure is correctly converted.",
+      "· The politeness tone is preserved in the Sinhala output.",
+      "· Sinhala spelling and word segmentation are accurate.",
+      "· The sentence meaning remains clear."
+    ],
+    "coverage": [
+      "· Greeting / request / response",
+      "· Imperative (command)",
+      "· M (31–299 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0005",
+    "name": "Multi-lined story form with embedded english",
+    "length_type": "L",
+    "input": "mama kadayata gos Coke ekak biyuvemi. evita, magee phone eka ring vuNaa. mama magee kalisam saakkuvee atha damaa phone eka athata gaththemi. mama ikmaNin answer kaLemi. \"puthaa! gedhara enna!\". mama phone eka off kaLemi. \"mudhalaali, mata maalupaan ekak dhenna please!\". mudhalaali, maalupaan ekak mata dhunneya. mama cool eken banis eka kanavita, aayeth phone eka ring vuNeeya. evita, mama thaaththaagee paNivudaya mathak vunemi. \"shik!\"",
+    "expected": "මම කඩයට ගොස් Coke එකක් බියුවෙමි. එවිට, මගේ phone එක ring වුණා. මම මගේ කලිසම් සාක්කුවේ අත ඩමා phone එක අතට ගත්තෙමි. මම ඉක්මණින් answer කළෙමි. \"පුතා! ගෙදර එන්න!\". මම phone එක off කළෙමි. \"මුදලාලි, මට මාලුපාන් එකක් දෙන්න please!\". මුදලාලි, මාලුපාන් එකක් මට දුන්නෙය. මම cool එකෙන් බනිස් එක කනවිට, ආයෙත් phone එක ring වුණේය. එවිට, මම තාත්තාගේ පණිවුඩය මතක් වුනෙමි. \"ශික්!\"",
+    "actual": "මම කඩයට ගොස් Coke එකක් බියුවෙමි. එවිට, මගේ phone එක ring වුණා. මම මගේ කලිසම් සාක්කුවේ අත ඩමා phone එක අතට ගත්තෙමි. මම ඉක්මණින් answer කළෙමි. \"පුතා! ගෙදර එන්න!\". මම phone එක off කළෙමි. \"මුදලාලි, මට මාලුපාන් එකක් දෙන්න please!\". මුදලාලි, මාලුපාන් එකක් මට දුන්නෙය. මම cool එකෙන් බනිස් එක කනවිට, ආයෙත් phone එක ring වුණේය. එවිට, මම තාත්තාගේ පණිවුඩය මතක් වුනෙමි. \"ශික්!\"",
+    "status": "Pass",
+    "justification": [
+      "· The long narrative structure is converted accurately.",
+      "· Embedded English words (e.g., \"Coke\", \"phone\") are preserved.",
+      "· Dialogue markers and punctuation are maintained correctly.",
+      "· Past tense verb forms are handled consistently throughout."
+    ],
+    "coverage": [
+      "· Mixed Singlish + English",
+      "· Compound sentence",
+      "· L (≥300 characters)",
+      "· Robustness validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0006",
+    "name": "Negative past tense",
+    "length_type": "M",
+    "input": "nQQgii mal nokada, dhiva yana vita, puQQchi pokuNak dhaekkaaya. ee pokuNee, lassana gold paata maaLuvek sitiyeeya.",
+    "expected": "නංගී මල් නොකඩ, දිව යන විට, පුංචි පොකුණක් දැක්කාය. ඒ පොකුණේ, ලස්සන gold පාට මාළුවෙක් සිටියේය.",
+    "actual": "නංගී මල් නොකඩ, දිව යන විට, පුංචි පොකුණක් දැක්කාය. ඒ පොකුණේ, ලස්සන gold පාට මාළුවෙක් සිටියේය.",
+    "status": "Pass",
+    "justification": [
+      "· The negative form \"nokada\" is correctly converted.",
+      "· Past tense verb endings are accurately transliterated.",
+      "· The embedded English word \"gold\" is preserved.",
+      "· The compound sentence structure is handled properly."
+    ],
+    "coverage": [
+      "· Daily language usage",
+      "· Negation (negative form)",
+      "· M (31–299 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0007",
+    "name": "Input with extra spacing",
+    "length_type": "S",
+    "input": "sthriiya,  thoo  kumak   kiyannidha? ",
+    "expected": "ස්ත්‍රීය,  තෝ  කුමක්   කියන්නිද? ",
+    "actual": "ස්ත්‍රීය,  තෝ  කුමක්   කියන්නිද? ",
+    "status": "Pass",
+    "justification": [
+      "· Extra spaces between words are preserved in the output.",
+      "· The question structure is correctly converted.",
+      "· Sinhala spelling remains accurate despite irregular spacing.",
+      "· The question mark is correctly placed."
+    ],
+    "coverage": [
+      "· Formatting (spaces / line breaks / paragraph)",
+      "· Interrogative (question)",
+      "· S (≤30 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0008",
+    "name": "Question with weight reference",
+    "length_type": "S",
+    "input": "mudhalaali, kaerat kilo ekak kiiyadha?",
+    "expected": "මුදලාලි, කැරට් kilo එකක් කීයද?",
+    "actual": "මුදලාලි, කැරට් kilo එකක් කීයද?",
+    "status": "Pass",
+    "justification": [
+      "· The English unit \"kilo\" is preserved without conversion.",
+      "· The question form is accurately converted to Sinhala.",
+      "· The weight-related vocabulary is handled correctly.",
+      "· The question mark is correctly placed."
+    ],
+    "coverage": [
+      "· Punctuation / numbers",
+      "· Interrogative (question)",
+      "· S (≤30 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0009",
+    "name": "Formal greeting and date refernence in future tense",
+    "length_type": "M",
+    "input": "obata seth veevaa! piyaNeni, api koLaBAta juuli maasayee 17 hoo 20 vaeni dhinavala enabava dhaenum dhiimata mea lipiya liyannemu. ",
+    "expected": "ඔබට සෙත් වේවා! පියණෙනි, අපි කොළඹට ජූලි මාසයේ 17 හෝ 20 වැනි දිනවල එනබව දැනුම් දීමට මේ ලිපිය ලියන්නෙමු. ",
+    "actual": "ඔබට සෙත් වේවා! පියණෙනි, අපි කොළඹට ජූලි මාසයේ 17 හෝ 20 වැනි දිනවල එනබව දැනුම් දීමට මේ ලිපිය ලියන්නෙමු. ",
+    "status": "Pass",
+    "justification": [
+      "· The formal greeting is correctly converted to Sinhala.",
+      "· Numeric date references (17, 20) are preserved.",
+      "· The future tense structure is accurately transliterated.",
+      "· The place name \"koLaBAta\" is correctly converted."
+    ],
+    "coverage": [
+      "· Greeting / request / response",
+      "· Future tense",
+      "· M (31–299 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0010",
+    "name": "Input with hyphenated words",
+    "length_type": "M",
+    "input": "seeya siQQhaLa-avurudhu uthsavayata apita rasa-kaevili huGAk aragena aaveya.",
+    "expected": "සේය සිංහළ-අවුරුදු උත්සවයට අපිට රස-කැවිලි හුඟක් අරගෙන ආවෙය.",
+    "actual": "සේය සිංහළ-අවුරුදු උත්සවයට අපිට රස-කැවිලි හුඟක් අරගෙන ආවෙය.",
+    "status": "Pass",
+    "justification": [
+      "· Hyphenated compound words are preserved in the output.",
+      "· The past tense verb form is correctly converted.",
+      "· Sinhala spelling is accurate for all words.",
+      "· The sentence meaning is fully maintained."
+    ],
+    "coverage": [
+      "· Formatting (spaces / line breaks / paragraph)",
+      "· Past tense",
+      "· M (31–299 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0011",
+    "name": "English technical term embedded",
+    "length_type": "M",
+    "input": "Zoom meeting ekak thiyennee",
+    "expected": "Zoom meeting එකක් තියෙන්නේ",
+    "actual": "Zoom meeting එකක් තියෙන්නේ",
+    "status": "Pass",
+    "justification": [
+      "· English technical term \"Zoom\" is preserved.",
+      "· Mixed language structure is handled well.",
+      "· Sinhala portions are correctly converted.",
+      "· Meaning remains clear and natural."
+    ],
+    "coverage": [
+      "· Mixed Singlish + English",
+      "· Simple sentence",
+      "· M (31–299 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0012",
+    "name": "Positive past tense",
+    "length_type": "S",
+    "input": "nQQgii mihiri gii kiivaaya.",
+    "expected": "නංගී මිහිරි ගී කීවාය.",
+    "actual": "නංගී මිහිරි ගී කීවාය.",
+    "status": "Pass",
+    "justification": [
+      "· The past tense verb form is correctly converted.",
+      "· Sinhala spelling is accurate.",
+      "· The subject-verb agreement is properly maintained.",
+      "· The sentence meaning is fully maintained."
+    ],
+    "coverage": [
+      "· Daily language usage",
+      "· Past tense",
+      "· S (≤30 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0013",
+    "name": "Multiple vocabulary",
+    "length_type": "M",
+    "input": "kaputaa vathura biimata kaLaya LaGAta giyeeya.",
+    "expected": "කපුටා වතුර බීමට කළය ළඟට ගියේය.",
+    "actual": "කපුටා වතුර බීමට කළය ළඟට ගියේය.",
+    "status": "Pass",
+    "justification": [
+      "· Multiple vocabulary words are correctly converted.",
+      "· The past tense structure is accurately transliterated.",
+      "· Word order and sentence flow are preserved.",
+      "· Sinhala spelling is correct for all words."
+    ],
+    "coverage": [
+      "· Daily language usage",
+      "· Past tense",
+      "· S (≤30 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0014",
+    "name": "Plural Past Tense",
+    "length_type": "S",
+    "input": "samanalun mal vatee piyaaBAthi.",
+    "expected": "සමනලුන් මල් වටේ පියාඹති.",
+    "actual": "සමනලුන් මල් වටේ පියාඹති.",
+    "status": "Pass",
+    "justification": [
+      "· The plural subject is correctly converted.",
+      "· The past tense verb form is accurately transliterated.",
+      "· The plural-past tense agreement is properly handled.",
+      "· Sinhala spelling is correct for all words."
+    ],
+    "coverage": [
+      "· Daily language usage",
+      "· Plural form",
+      "· S (≤30 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0015",
+    "name": "Speech with slang ",
+    "length_type": "M",
+    "input": "\"koLaBAta vaessa, gaallata themenavaa\" apee gamee kollan kiyanavaa mata aehuNaa. AIYO! ",
+    "expected": "\"කොළඹට වැස්ස, ගාල්ලට තෙමෙනවා\" අපේ ගමේ කොල්ලන් කියනවා මට ඇහුණා. AIYO! ",
+    "actual": "\"කොළඹට වැස්ස, ගාල්ලට තෙමෙනවා\" අපේ ගමේ කොල්ලන් කියනවා මට ඇහුණා. AIYO! ",
+    "status": "Pass",
+    "justification": [
+      "· The quoted speech is correctly converted to Sinhala.",
+      "· The slang exclamation \"AIYO\" is preserved.",
+      "· Place names are accurately transliterated.",
+      "· The informal speech structure is handled properly."
+    ],
+    "coverage": [
+      "· Slang / informal language",
+      "· Compound sentence",
+      "· M (31–299 characters)",
+      "· Robustness validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0016",
+    "name": "Repeated words for emphasis",
+    "length_type": "S",
+    "input": "ov, ov, mata paNivudaya laebuNi.",
+    "expected": "ඔව්, ඔව්, මට පණිවුඩය ලැබුණි.",
+    "actual": "ඔව්, ඔව්, මට පණිවුඩය ලැබුණි.",
+    "status": "Pass",
+    "justification": [
+      "· The repeated word \"ov\" is correctly converted both times.",
+      "· Comma placement is preserved in the output.",
+      "· The emphasis pattern is maintained in the Sinhala output.",
+      "· The sentence meaning is fully preserved."
+    ],
+    "coverage": [
+      "· Daily language usage",
+      "· Simple sentence",
+      "· S (≤30 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0017",
+    "name": "Common greeting phrase",
+    "length_type": "S",
+    "input": "aayuboovan",
+    "expected": "ආයුබෝවන්",
+    "actual": "ආයුබෝවන්",
+    "status": "Pass",
+    "justification": [
+      "· Traditional greeting is correctly converted.",
+      "· Cultural context is preserved.",
+      "· Spelling is accurate.",
+      "· Single word conversion is handled properly."
+    ],
+    "coverage": [
+      "· Greeting / request / response",
+      "· Simple sentence",
+      "· S (≤30 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0018",
+    "name": "Currency format preservation",
+    "length_type": "S",
+    "input": "Rs. 5343",
+    "expected": "Rs. 5343",
+    "actual": "Rs. 5343",
+    "status": "Pass",
+    "justification": [
+      "· Currency symbol is preserved.",
+      "· Numeric value remains unchanged.",
+      "· Format is maintained correctly.",
+      "· No unwanted conversion occurs."
+    ],
+    "coverage": [
+      "· Punctuation / numbers",
+      "· Simple sentence",
+      "· S (≤30 characters)",
+      "· Formatting preservation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0019",
+    "name": "Formal Question",
+    "length_type": "S",
+    "input": "thoo! ohuta kumak kiivehidha?",
+    "expected": "තෝ! ඔහුට කුමක් කීවෙහිද?",
+    "actual": "තෝ! ඔහුට කුමක් කීවෙහිද?",
+    "status": "Pass",
+    "justification": [
+      "· The formal question structure is correctly converted.",
+      "· The exclamation mark after \"thoo\" is preserved.",
+      "· The question mark is accurately placed.",
+      "· Sinhala spelling is correct throughout."
+    ],
+    "coverage": [
+      "· Greeting / request / response",
+      "· Interrogative (question)",
+      "· S (≤30 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0020",
+    "name": "Multi-word phrase collocation",
+    "length_type": "S",
+    "input": "mata oona",
+    "expected": "මට ඕන",
+    "actual": "මට ඕන",
+    "status": "Pass",
+    "justification": [
+      "· Common phrase collocation is recognized.",
+      "· Natural phrasing is maintained.",
+      "· Meaning is preserved accurately.",
+      "· Idiomatic expression is handled correctly."
+    ],
+    "coverage": [
+      "· Word combination / phrase pattern",
+      "· Simple sentence",
+      "· S (≤30 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0021",
+    "name": "Past Tense",
+    "length_type": "S",
+    "input": "ayiyaa gasata naega kos kaeduveeya.",
+    "expected": "අයියා ගසට නැග කොස් කැඩුවේය.",
+    "actual": "අයියා ගසට නැග කොස් කැඩුවේය.",
+    "status": "Pass",
+    "justification": [
+      "· The past tense verb form is correctly converted.",
+      "· The subject and action are accurately transliterated.",
+      "· Sinhala spelling is correct throughout.",
+      "· The sentence meaning is fully preserved."
+    ],
+    "coverage": [
+      "· Daily language usage",
+      "· Past tense",
+      "· S (≤30 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0022",
+    "name": "Informal written language",
+    "length_type": "M",
+    "input": "\"maamaa gedhara ena vita, loriyea thiyana minii-pettiya paarata vatuNi.\" \"LOL! boruvaklu?\" mallii magee pitata gasaa gena dhiva giyeaya.",
+    "expected": "\"මාමා ගෙදර එන විට, ලොරියේ තියන මිනී-පෙට්ටිය පාරට වටුණි.\" \"LOL! බොරුවක්ලු?\" මල්ලී මගේ පිටට ගසා ගෙන දිව ගියේය.",
+    "actual": "\"මාමා ගෙදර එන විට, ලොරියේ තියන මිනී-පෙට්ටිය පාරට වටුණි.\" \"LOL! බොරුවක්ලු?\" මල්ලී මගේ පිටට ගසා ගෙන දිව ගියේය.",
+    "status": "Pass",
+    "justification": [
+      "· Quoted dialogue is correctly converted to Sinhala.",
+      "· The English slang \"LOL\" is preserved without conversion.",
+      "· Hyphenated words in the output are maintained.",
+      "· The informal past tense structure is accurately handled."
+    ],
+    "coverage": [
+      "· Slang / informal language",
+      "· Compound sentence",
+      "· M (31–299 characters)",
+      "· Robustness validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0023",
+    "name": "Colloquial future tense",
+    "length_type": "M",
+    "input": "heta campus ekata enavaadha? oyaa tutorial sheet eka aragena enna.",
+    "expected": "හෙට campus එකට එනවාද? ඔයා tutorial sheet එක අරගෙන එන්න.",
+    "actual": "හෙට campus එකට එනවාද? ඔයා tutorial sheet එක අරගෙන එන්න.",
+    "status": "Pass",
+    "justification": [
+      "· The future tense question is correctly converted.",
+      "· English technical terms (\"campus\", \"tutorial sheet\") are preserved.",
+      "· The imperative command in the second sentence is accurate.",
+      "· The colloquial tone is maintained in the Sinhala output."
+    ],
+    "coverage": [
+      "· Mixed Singlish + English",
+      "· Future tense",
+      "· M (31–299 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0024",
+    "name": "Imperative command form",
+    "length_type": "S",
+    "input": "mata mathak karanna!",
+    "expected": "මට මතක් කරන්න!",
+    "actual": "මට මතක් කරන්න!",
+    "status": "Pass",
+    "justification": [
+      "· The imperative command structure is correctly converted.",
+      "· The exclamation mark is preserved in the output.",
+      "· Sinhala spelling is accurate.",
+      "· The commanding tone is maintained."
+    ],
+    "coverage": [
+      "· Daily language usage",
+      "· Imperative (command)",
+      "· S (≤30 characters)",
+      "· Accuracy validation"
+    ]
+  },
+  {
+    "id": "Neg_UI_0001",
+    "name": "English slang",
+    "length_type": "M",
+    "input": "adha ennae bruh!",
+    "expected": "අද එන්නැ bruh!",
+    "actual": "අද එන්නැ බ්‍රුහ්!",
+    "status": "fail",
+    "justification": [
+      "· The English slang word \"bruh\" is incorrectly transliterated.",
+      "· Expected behavior is to keep \"bruh\" unchanged."
+    ],
+    "coverage": [
+      "· Slang / informal language",
+      "· Simple sentence",
+      "· S (≤30 characters)",
+      "· Error handling / input validation"
+    ]
+  },
+  {
+    "id": "Neg_UI_0002",
+    "name": "Names in capital translation",
+    "length_type": "M",
+    "input": "yo man! methanta enna! adha apita godak vaeda thiyanavaa. api class ekata yana gaman, Brunovath aragena yamu.",
+    "expected": "yo man! මෙතන්ට එන්න! අද අපිට ගොඩක් වැඩ තියනවා. අපි class එකට යන ගමන්, ඹ්‍රුනොවත් අරගෙන යමු.",
+    "actual": "යො man! මෙතන්ට එන්න! අද අපිට ගොඩක් වැඩ තියනවා. අපි class එකට යන ගමන්, ඹ්‍රුනොවත් අරගෙන යමු.",
+    "status": "fail",
+    "justification": [
+      "· The slang greeting \"yo\" is incorrectly converted to Sinhala.",
+      "· The proper name \"Brunovath\" is incorrectly transliterated.",
+      "· English slang terms embedded in the sentence are not preserved.",
+      "· Names should remain unchanged but were converted."
+    ],
+    "coverage": [
+      "· Names / places / common English words",
+      "· Compound sentence",
+      "· M (31–299 characters)",
+      "· Error handling / input validation"
+    ]
+  },
+  {
+    "id": "Neg_UI_0003",
+    "name": "Time reference, complex language ",
+    "length_type": "M",
+    "input": "apee kadee adha pe.va 8:00, vivruthai.",
+    "expected": "අපේ කඩේ අද පෙ.ව 8:00, විවෘතයි.",
+    "actual": "අපේ කඩේ අද පෙ.ව 8:00, විව්‍රුතෛ.",
+    "status": "fail",
+    "justification": [
+      "· The time abbreviation \"pe.va\" is not handled correctly.",
+      "· The formal word \"vivruthai\" is incorrectly transliterated.",
+      "· Time format references cause conversion errors.",
+      "· Expected correct preservation of the time reference failed."
+    ],
+    "coverage": [
+      "· Punctuation / numbers",
+      "· Simple sentence",
+      "· S (≤30 characters)",
+      "· Error handling / input validation"
+    ]
+  },
+  {
+    "id": "Neg_UI_0004",
+    "name": "English Brand name",
+    "length_type": "M",
+    "input": "Dialog Axiata PLC aayathana rata puraama aetha.",
+    "expected": "Dialog Axiata PLC ආයතන රට පුරාම ඇත.",
+    "actual": "Dialog අxඉඅට PLC ආයතන රට පුරාම ඇත.",
+    "status": "fail",
+    "justification": [
+      "· The brand name \"Axiata\" is incorrectly transliterated.",
+      "· English brand names are not preserved as-is in the output."
+    ],
+    "coverage": [
+      "· Names / places / common English words",
+      "· Simple sentence",
+      "· S (≤30 characters)",
+      "· Error handling / input validation"
+    ]
+  },
+  {
+    "id": "Neg_UI_0005",
+    "name": "Formal plural present language",
+    "length_type": "M",
+    "input": "ee gruhayehi bohoo mehekaruvoo sitithi.",
+    "expected": "ඒ ගෘහයෙහි බොහෝ මෙහෙකරුවෝ සිටිති.",
+    "actual": "ඒ ග්‍රුහයෙහි බොහෝ මෙහෙකරුවෝ සිටිති.",
+    "status": "fail",
+    "justification": [
+      "· The formal word \"gruhayehi\" is incorrectly transliterated.",
+      "· The complex conjunct letter is not rendered correctly.",
+      "· The formal plural structure causes a spelling error.",
+      "· Expected correct Sinhala spelling for the formal term failed."
+    ],
+    "coverage": [
+      "· Daily language usage",
+      "· Plural form",
+      "· S (≤30 characters)",
+      "· Error handling / input validation"
+    ]
+  },
+  {
+    "id": "Neg_UI_0006",
+    "name": "Expected spelling missed",
+    "length_type": "M",
+    "input": "kaashayapa raju kaLa aparaaDhaya kumakdha?",
+    "expected": "කාශ්‍යප රජු කළ අපරාධය කුමක්ද?",
+    "actual": "කාශයප රජු කළ අපරාධය කුමක්ද?",
+    "status": "fail",
+    "justification": [
+      "· The conjunct letter in \"kaashayapa\" is not rendered correctly.",
+      "· Complex consonant clusters cause an output error.",
+      "· The expected Sinhala spelling for the proper name is missed.",
+      "· Expected accurate spelling for the famous name failed."
+    ],
+    "coverage": [
+      "· Names / places / common English words",
+      "· Interrogative (question)",
+      "· S (≤30 characters)",
+      "· Error handling / input validation"
+    ]
+  },
+  {
+    "id": "Neg_UI_0007",
+    "name": "English word mixed in sentence not preserved",
+    "length_type": "S",
+    "input": "mata nidhimathayi, men!",
+    "expected": "මට නිදිමතයි, men!",
+    "actual": "මට නිදිමතයි, මෙන්!",
+    "status": "fail",
+    "justification": [
+      "· The English word \"men\" is incorrectly converted to Sinhala.",
+      "· Colloquial English words should be preserved but were transliterated.",
+      "· The informal mixed-language structure is not handled correctly.",
+      "· Expected accurate spelling for the famous name failed."
+    ],
+    "coverage": [
+      "· Mixed Singlish + English",
+      "· Simple sentence",
+      "· S (≤30 characters)",
+      "· Error handling / input validation"
+    ]
+  },
+  {
+    "id": "Neg_Fun_0008",
+    "name": "Words joined without spaces",
+    "length_type": "S",
+    "input": "mamagedharayanavaa",
+    "expected": "මම ගෙදර යනවා",
+    "actual": "මමගෙදරයනවා",
+    "status": "Fail",
+    "justification": [
+      "· Joined words are not separated properly.",
+      "· Word boundaries are not recognized.",
+      "· Output is difficult to read.",
+      "· Expected automatic word segmentation failed."
+    ],
+    "coverage": [
+      "· Typographical error handling",
+      "· Simple sentence",
+      "· S (≤30 characters)",
+      "· Robustness validation"
+    ]
+  },
+  {
+    "id": "Neg_Fun_0009",
+    "name": "Non-standard slang spelling",
+    "length_type": "M",
+    "input": "kohomdaaaa oyyaaa",
+    "expected": "කොහොමද ඔයා",
+    "actual": "කොහොම්දඅඅඅ ඔය්යඅඅ",
+    "status": "Fail",
+    "justification": [
+      "· Elongated vowels are not normalized.",
+      "· Slang spelling creates gibberish output.",
+      "· Text is difficult to read.",
+      "· Expected vowel normalization failed."
+    ],
+    "coverage": [
+      "· Slang / informal language",
+      "· Simple sentence",
+      "· M (31–299 characters)",
+      "· Robustness validation"
+    ]
+  },
+  {
+    "id": "Neg_Fun_0010",
+    "name": "Complex lettering",
+    "length_type": "S",
+    "input": "pakshiyoo kuBuree goyam kathi.",
+    "expected": "පක්‍ෂියෝ කුඹුරේ ගොයම් කති.",
+    "actual": "පක්ශියෝ කුඹුරේ ගොයම් කති.",
+    "status": "Fail",
+    "justification": [
+      "· The conjunct letter in \"pakshiyoo\" is not rendered correctly.",
+      "· The expected Sinhala spelling for the complex word is missed.",
+      "· Complex consonant combinations cause an output error.",
+      "· Expected accurate conjunct letter rendering failed."
+    ],
+    "coverage": [
+      "· Daily language usage",
+      "· Plural form",
+      "· S (≤30 characters)",
+      "· Robustness validation"
+    ]
+  },
+  {
+    "id": "Pos_UI_0001",
+    "name": "Copy button copies Sinhala output to clipboard",
+    "length_type": "S",
+    "input": "oyaata saniipada?",
+    "expected": "Enter input and click copy button. Sinhala output should be copied to clipboard successfully.",
+    "actual": "Input entered, copy button clicked, Sinhala text copied to clipboard successfully",
+    "status": "Pass",
+    "justification": [
+      "· Copy button successfully copies the Sinhala output."
+    ],
+    "coverage": [
+      "· Empty/cleared input handling"
+    ]
+  }
+]

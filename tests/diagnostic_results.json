@@ -1,0 +1,65 @@
+[
+  {
+    "id": "Pos_Fun_0001",
+    "name": "Singlar form Conversion",
+    "input": "Lamayaa mal kadanavaa",
+    "expectedInExcel": "ළමයා මල් කඩනවා",
+    "actualFromWebsite": "ළමයා මල් කඩනවා",
+    "matches": true,
+    "needsExcelUpdate": false
+  },
+  {
+    "id": "Pos_Fun_0009",
+    "name": "Formal greeting and date refernence in future tense",
+    "input": "obata seth veevaa! piyaNeni, api koLaBAta juuli maasayee 17 hoo 20 vaeni dhinavala enabava dhaenum dhiimata mea lipiya liyannemu. ",
+    "expectedInExcel": "ඔබට සෙත් වේවා! පියණෙනි, අපි කොළඹට ජූලි මාසයේ 17 හෝ 20 වැනි දිනවල එනබව දැනුම් දීමට මේ ලිපිය ලියන්නෙමු.",
+    "actualFromWebsite": "ඔබට සෙත් වේවා! පියණෙනි, අපි කොළඹට ජූලි මාසයේ 17 හෝ 20 වැනි දිනවල එනබව දැනුම් දීමට මේ ලිපිය ලියන්නෙමු.",
+    "matches": true,
+    "needsExcelUpdate": false
+  },
+  {
+    "id": "Pos_Fun_0011",
+    "name": "English technical term embedded",
+    "input": "Zoom meeting ekak thiyennee",
+    "expectedInExcel": "Zoom meeting එකක් තියෙන්නේ",
+    "actualFromWebsite": "Zoom meeting එකක් තියෙන්නේ",
+    "matches": true,
+    "needsExcelUpdate": false
+  },
+  {
+    "id": "Pos_Fun_0012",
+    "name": "Positive past tense",
+    "input": "nQQgii mihiri gii kiivaaya.",
+    "expectedInExcel": "නංගී මිහිරි ගී කීවාය.",
+    "actualFromWebsite": "නංගී මිහිරි ගී කීවාය.",
+    "matches": true,
+    "needsExcelUpdate": false
+  },
+  {
+    "id": "Pos_Fun_0018",
+    "name": "Currency format preservation",
+    "input": "Rs. 5343",
+    "expectedInExcel": "Rs. 5343",
+    "actualFromWebsite": "Rs. 5343",
+    "matches": true,
+    "needsExcelUpdate": false
+  },
+  {
+    "id": "Pos_Fun_0024",
+    "name": "Imperative command form",
+    "input": "mata mathak karanna!",
+    "expectedInExcel": "මට මතක් කරන්න!",
+    "actualFromWebsite": "මට මතක් කරන්න!",
+    "matches": true,
+    "needsExcelUpdate": false
+  },
+  {
+    "id": "Pos_UI_0001",
+    "name": "Copy button copies Sinhala output to clipboard",
+    "input": "oyaata saniipada?",
+    "expectedInExcel": "Enter input and click copy button. Sinhala output should be copied to clipboard successfully.",
+    "actualFromWebsite": "ඔයාට සනීපඩ?",
+    "matches": false,
+    "needsExcelUpdate": true
+  }
+]
